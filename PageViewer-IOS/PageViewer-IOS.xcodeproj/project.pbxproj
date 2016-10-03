@@ -20,6 +20,7 @@
 		C0E783A01D988D6000FD9AF0 /* SharedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0E783981D988D6000FD9AF0 /* SharedCell.xib */; };
 		C0E783A11D988D6000FD9AF0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7839A1D988D6000FD9AF0 /* Menu.swift */; };
 		C0E783A21D988D6000FD9AF0 /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7839C1D988D6000FD9AF0 /* Pager.swift */; };
+		C0FCCFB71DA308210091DB9F /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FCCFB61DA308210091DB9F /* CustomFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C0E783981D988D6000FD9AF0 /* SharedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SharedCell.xib; sourceTree = "<group>"; };
 		C0E7839A1D988D6000FD9AF0 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		C0E7839C1D988D6000FD9AF0 /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
+		C0FCCFB61DA308210091DB9F /* CustomFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		C0E783941D988D6000FD9AF0 /* Colections */ = {
 			isa = PBXGroup;
 			children = (
+				C0FCCFB51DA308130091DB9F /* CustomLayout */,
 				C0E783951D988D6000FD9AF0 /* Cells */,
 				C0E783991D988D6000FD9AF0 /* Menu */,
 				C0E7839B1D988D6000FD9AF0 /* Pager */,
@@ -205,6 +208,14 @@
 				C0E7839C1D988D6000FD9AF0 /* Pager.swift */,
 			);
 			path = Pager;
+			sourceTree = "<group>";
+		};
+		C0FCCFB51DA308130091DB9F /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				C0FCCFB61DA308210091DB9F /* CustomFlowLayout.swift */,
+			);
+			path = CustomLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0E7839D1D988D6000FD9AF0 /* Main.swift in Sources */,
+				C0FCCFB71DA308210091DB9F /* CustomFlowLayout.swift in Sources */,
 				C0E783641D988D1B00FD9AF0 /* ViewController.swift in Sources */,
 				C0E7839F1D988D6000FD9AF0 /* SharedCell.swift in Sources */,
 				C0E783A21D988D6000FD9AF0 /* Pager.swift in Sources */,
@@ -570,6 +582,7 @@
 				C0E783881D988D1B00FD9AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0E783891D988D1B00FD9AF0 /* Build configuration list for PBXNativeTarget "PageViewer-IOSTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +591,7 @@
 				C0E7838B1D988D1B00FD9AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0E7838C1D988D1B00FD9AF0 /* Build configuration list for PBXNativeTarget "PageViewer-IOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +600,7 @@
 				C0E7838E1D988D1B00FD9AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

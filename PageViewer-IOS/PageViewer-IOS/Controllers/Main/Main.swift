@@ -46,5 +46,5 @@ class Main: UIViewController , ViewPagerDelegate {
         self.pager.scrollToItemAtIndexPath(index, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
 
     }
-    
+    //
 }

@@ -22,14 +22,19 @@ class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDel
 
         self.dataSource = self
         self.delegate = self
-        self.flowLayou = UICollectionViewFlowLayout()
-        self.flowLayou.scrollDirection = .Horizontal
-        self.collectionViewLayout = flowLayou
+        //
+        let collectionViewLayout: CustomFlowLayout = CustomFlowLayout()
+        collectionViewLayout.itemSize = CGSizeMake(self.frame.width, self.frame.height)
+        collectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        collectionViewLayout.minimumInteritemSpacing = 0
+        collectionViewLayout.scrollDirection = UICollectionViewScrollDirection.Horizontal
+        //
+        self.collectionViewLayout = collectionViewLayout
         self.registerNib(sharedNib, forCellWithReuseIdentifier: "SharedCell")
         self.backgroundColor = UIColor.whiteColor()
         self.pagerDataSource = data
     }
-    // MARK: - Datasource and delegate 
+    // MARK: - Datasource and delegate implementations
     //
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return pagerDataSource.count
@@ -61,4 +66,5 @@ class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDel
     func collectionView(collectionView: UICollectionView, targetContentOffsetForProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         return self.center
     }
+    
 }

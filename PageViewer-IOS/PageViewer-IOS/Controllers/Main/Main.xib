@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Main" customModule="PageViewer" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Main" customModule="PageViewer_IOS" customModuleProvider="target">
             <connections>
                 <outlet property="menu" destination="OkA-Ad-yQK" id="9DY-Cd-OyB"/>
                 <outlet property="pager" destination="D27-cU-WDa" id="mDw-ob-gvo"/>
@@ -18,16 +18,16 @@
             <rect key="frame" x="0.0" y="0.0" width="321" height="538"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D27-cU-WDa" customClass="Pager" customModule="PageViewer" customModuleProvider="target">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D27-cU-WDa" customClass="Pager" customModule="PageViewer_IOS" customModuleProvider="target">
                     <rect key="frame" x="8" y="89" width="305" height="441"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SiH-c3-weL">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SiH-c3-weL">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OkA-Ad-yQK" customClass="Menu" customModule="PageViewer" customModuleProvider="target">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OkA-Ad-yQK" customClass="Menu" customModule="PageViewer_IOS" customModuleProvider="target">
                     <rect key="frame" x="-1" y="0.0" width="322" height="81"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VAM-oj-Ygz">
                         <size key="itemSize" width="50" height="50"/>
