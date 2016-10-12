@@ -10,12 +10,13 @@ import UIKit
 
 class MenuCell: UICollectionViewCell {
 
+    @IBOutlet weak var titleLab: UILabel!
     @IBOutlet weak var selectionView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         self.selectionView.hidden = true
-
+        
     }
    
     override var selected: Bool {

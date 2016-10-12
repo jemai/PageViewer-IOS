@@ -40,8 +40,7 @@ class Main: UIViewController , ViewPagerDelegate {
     // MARK: - Protocole implementation
     func scrollMenu(index : NSIndexPath){
         self.menu.scrollToItemAtIndexPath(index, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
-        let cell = self.menu.cellForItemAtIndexPath(index) as! MenuCell
-        cell.selected = true
+        self.menu.selectItemAtIndexPath(index, animated: true, scrollPosition: UICollectionViewScrollPosition.CenteredHorizontally)
     }
     //
     func scrollPager(index : NSIndexPath){

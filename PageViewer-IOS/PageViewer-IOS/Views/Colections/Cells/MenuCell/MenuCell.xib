@@ -14,10 +14,10 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="152" height="134"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZp-xh-LRc">
-                        <rect key="frame" x="55" y="56" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZp-xh-LRc">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="121"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-xe-YGa">
@@ -32,15 +32,16 @@
                 <constraint firstItem="a4A-xe-YGa" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="6VX-Lf-kgf"/>
                 <constraint firstItem="a4A-xe-YGa" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.1" id="9Xg-uG-4pd"/>
                 <constraint firstItem="aZp-xh-LRc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="LAU-5g-Aok"/>
-                <constraint firstItem="aZp-xh-LRc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="56" id="LDB-Vx-AVs"/>
+                <constraint firstItem="aZp-xh-LRc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LDB-Vx-AVs"/>
                 <constraint firstAttribute="bottom" secondItem="a4A-xe-YGa" secondAttribute="bottom" id="kuj-QV-VVJ"/>
                 <constraint firstItem="a4A-xe-YGa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="rp1-ac-rhd"/>
                 <constraint firstItem="aZp-xh-LRc" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="rtI-PD-Nai"/>
-                <constraint firstItem="a4A-xe-YGa" firstAttribute="top" secondItem="aZp-xh-LRc" secondAttribute="bottom" constant="44" id="zL2-ZK-UnW"/>
+                <constraint firstItem="a4A-xe-YGa" firstAttribute="top" secondItem="aZp-xh-LRc" secondAttribute="bottom" id="zL2-ZK-UnW"/>
             </constraints>
             <size key="customSize" width="152" height="134"/>
             <connections>
                 <outlet property="selectionView" destination="a4A-xe-YGa" id="0fZ-iI-qVA"/>
+                <outlet property="titleLab" destination="aZp-xh-LRc" id="cQJ-mu-aa8"/>
             </connections>
             <point key="canvasLocation" x="188" y="180"/>
         </collectionViewCell>
