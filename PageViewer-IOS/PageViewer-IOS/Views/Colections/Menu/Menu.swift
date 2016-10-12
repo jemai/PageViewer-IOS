@@ -12,7 +12,7 @@ class Menu: UICollectionView , UICollectionViewDataSource , UICollectionViewDele
     //MARK : Variables 
     var menuDataSource  = [UIColor]()
     var flowLayou : UICollectionViewFlowLayout!
-    var sharedNib = UINib(nibName: "SharedCell", bundle:nil)
+    var sharedNib = UINib(nibName: "MenuCell", bundle:nil)
     var pagerDelegate : ViewPagerDelegate!
     
     //
@@ -22,7 +22,7 @@ class Menu: UICollectionView , UICollectionViewDataSource , UICollectionViewDele
         self.flowLayou = UICollectionViewFlowLayout()
         self.flowLayou.scrollDirection = .Horizontal
         self.collectionViewLayout = flowLayou
-        self.registerNib(sharedNib, forCellWithReuseIdentifier: "SharedCell")
+        self.registerNib(sharedNib, forCellWithReuseIdentifier: "MenuCell")
         self.backgroundColor = UIColor.whiteColor()
         self.menuDataSource = data
 
@@ -33,7 +33,7 @@ class Menu: UICollectionView , UICollectionViewDataSource , UICollectionViewDele
     }
     //
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell : SharedCell = dequeueReusableCellWithReuseIdentifier("SharedCell", forIndexPath: indexPath) as! SharedCell
+        let cell : MenuCell = dequeueReusableCellWithReuseIdentifier("MenuCell", forIndexPath: indexPath) as! MenuCell
         cell.backgroundColor = self.menuDataSource[indexPath.row]
         return cell
     }

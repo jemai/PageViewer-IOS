@@ -32,6 +32,7 @@ class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDel
         self.collectionViewLayout = collectionViewLayout
         self.registerNib(sharedNib, forCellWithReuseIdentifier: "SharedCell")
         self.backgroundColor = UIColor.whiteColor()
+        
         self.pagerDataSource = data
     }
     // MARK: - Datasource and delegate implementations
@@ -55,7 +56,7 @@ class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDel
                         layout collectionViewLayout: UICollectionViewLayout,
                                sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let height = collectionView.bounds.size.height
-        return CGSizeMake(height,collectionView.bounds.size.width)
+        return CGSizeMake(collectionView.bounds.size.width,height)
     }
     //
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {

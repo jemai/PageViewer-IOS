@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C001BD331DAED5E500C51221 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001BD311DAED5E500C51221 /* MenuCell.swift */; };
+		C001BD341DAED5E500C51221 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C001BD321DAED5E500C51221 /* MenuCell.xib */; };
 		C0E783621D988D1B00FD9AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E783611D988D1B00FD9AF0 /* AppDelegate.swift */; };
 		C0E783641D988D1B00FD9AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E783631D988D1B00FD9AF0 /* ViewController.swift */; };
 		C0E783671D988D1B00FD9AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E783651D988D1B00FD9AF0 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C001BD311DAED5E500C51221 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		C001BD321DAED5E500C51221 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		C0E7835E1D988D1B00FD9AF0 /* PageViewer-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PageViewer-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E783611D988D1B00FD9AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E783631D988D1B00FD9AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C001BD2B1DAED5B300C51221 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				C001BD311DAED5E500C51221 /* MenuCell.swift */,
+				C001BD321DAED5E500C51221 /* MenuCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		C001BD2C1DAED5B300C51221 /* PagerCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PagerCell;
+			sourceTree = "<group>";
+		};
 		C0E783551D988D1B00FD9AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +200,8 @@
 		C0E783951D988D6000FD9AF0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C001BD2B1DAED5B300C51221 /* MenuCell */,
+				C001BD2C1DAED5B300C51221 /* PagerCell */,
 				C0E783961D988D6000FD9AF0 /* SharedCell */,
 			);
 			path = Cells;
@@ -322,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C001BD341DAED5E500C51221 /* MenuCell.xib in Resources */,
 				C0E7836C1D988D1B00FD9AF0 /* LaunchScreen.storyboard in Resources */,
 				C0E783691D988D1B00FD9AF0 /* Assets.xcassets in Resources */,
 				C0E7839E1D988D6000FD9AF0 /* Main.xib in Resources */,
@@ -357,6 +380,7 @@
 				C0E7839F1D988D6000FD9AF0 /* SharedCell.swift in Sources */,
 				C0E783A21D988D6000FD9AF0 /* Pager.swift in Sources */,
 				C0E783621D988D1B00FD9AF0 /* AppDelegate.swift in Sources */,
+				C001BD331DAED5E500C51221 /* MenuCell.swift in Sources */,
 				C0E783A11D988D6000FD9AF0 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

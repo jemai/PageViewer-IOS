@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D27-cU-WDa" customClass="Pager" customModule="PageViewer_IOS" customModuleProvider="target">
-                    <rect key="frame" x="8" y="89" width="305" height="441"/>
+                    <rect key="frame" x="0.0" y="81" width="321" height="457"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SiH-c3-weL">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -39,14 +39,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="D27-cU-WDa" secondAttribute="bottom" constant="8" id="MpV-dg-TrK"/>
+                <constraint firstAttribute="bottom" secondItem="D27-cU-WDa" secondAttribute="bottom" id="MpV-dg-TrK"/>
                 <constraint firstItem="D27-cU-WDa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OFu-qH-LU5"/>
                 <constraint firstItem="OkA-Ad-yQK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="QLA-n1-H6f"/>
-                <constraint firstItem="D27-cU-WDa" firstAttribute="top" secondItem="OkA-Ad-yQK" secondAttribute="bottom" constant="8" id="V8V-hM-vgh"/>
+                <constraint firstItem="D27-cU-WDa" firstAttribute="top" secondItem="OkA-Ad-yQK" secondAttribute="bottom" id="V8V-hM-vgh"/>
                 <constraint firstItem="OkA-Ad-yQK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZXT-C1-0vw"/>
                 <constraint firstItem="OkA-Ad-yQK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fpI-Qg-tuW"/>
                 <constraint firstItem="OkA-Ad-yQK" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.15" id="qIU-mk-EFT"/>
-                <constraint firstItem="D27-cU-WDa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.95" id="xcN-8H-JJP"/>
+                <constraint firstItem="D27-cU-WDa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="xcN-8H-JJP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="317.5" y="244"/>
