@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - delegate
 protocol ViewPagerDelegate {
-    func scrollMenu(index : NSIndexPath)
+    func scrollMenu(index : Int)
     func scrollPager(index : NSIndexPath)
 }
 //
@@ -30,22 +30,24 @@ class Main: UIViewController , ViewPagerDelegate {
         //
         self.menu.initCollection(data)
         self.pager.initCollection(data)
+        self.menu.selectItemAtIndexPath(NSIndexPath(forRow:0, inSection: 0), animated: true, scrollPosition: UICollectionViewScrollPosition.CenteredHorizontally)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Protocole implementation
-    func scrollMenu(index : NSIndexPath){
+    func scrollMenu(indexPath : Int){
+        let index = NSIndexPath(forRow:indexPath, inSection: 0)
         self.menu.scrollToItemAtIndexPath(index, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
         self.menu.selectItemAtIndexPath(index, animated: true, scrollPosition: UICollectionViewScrollPosition.CenteredHorizontally)
     }
     //
     func scrollPager(index : NSIndexPath){
         self.pager.scrollToItemAtIndexPath(index, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
-
+        
     }
     //
 }

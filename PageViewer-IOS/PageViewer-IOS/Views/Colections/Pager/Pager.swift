@@ -58,14 +58,23 @@ class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDel
         let height = collectionView.bounds.size.height
         return CGSizeMake(collectionView.bounds.size.width,height)
     }
-    //
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-        pagerDelegate.scrollMenu(indexPath)
-
+        //pagerDelegate.scrollMenu(indexPath)
+        
     }
     //
     func collectionView(collectionView: UICollectionView, targetContentOffsetForProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         return self.center
     }
-    
+    //
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let x = self.contentOffset.x
+        let w = self.bounds.size.width
+        let currentPage = Int(ceil(x/w))
+        if currentPage == 0 {
+            pagerDelegate.scrollMenu(currentPage)
+        }else {
+            pagerDelegate.scrollMenu(currentPage - 1)
+        }
+    }
 }
