@@ -108,6 +108,68 @@
 			path = PagerCell;
 			sourceTree = "<group>";
 		};
+		C0BD2D301DBD3CBC00CC7D88 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2D311DBD3CBC00CC7D88 /* DAO */,
+				C0BD2D321DBD3CBC00CC7D88 /* Mappers */,
+				C0BD2D331DBD3CBC00CC7D88 /* Models */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		C0BD2D311DBD3CBC00CC7D88 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		C0BD2D321DBD3CBC00CC7D88 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		C0BD2D331DBD3CBC00CC7D88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0BD2D341DBD3D2000CC7D88 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2D351DBD3D2000CC7D88 /* BaseConstants */,
+				C0BD2D361DBD3D2000CC7D88 /* Extensions */,
+				C0BD2D371DBD3D2000CC7D88 /* Utils */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C0BD2D351DBD3D2000CC7D88 /* BaseConstants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseConstants;
+			sourceTree = "<group>";
+		};
+		C0BD2D361DBD3D2000CC7D88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C0BD2D371DBD3D2000CC7D88 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C0E783551D988D1B00FD9AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +193,8 @@
 		C0E783601D988D1B00FD9AF0 /* PageViewer-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2D341DBD3D2000CC7D88 /* Helpers */,
+				C0BD2D301DBD3CBC00CC7D88 /* Repo */,
 				C0E7838F1D988D6000FD9AF0 /* Controllers */,
 				C0E783931D988D6000FD9AF0 /* Views */,
 				C0E783611D988D1B00FD9AF0 /* AppDelegate.swift */,
@@ -527,6 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "froge.PageViewer-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -538,6 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "froge.PageViewer-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
