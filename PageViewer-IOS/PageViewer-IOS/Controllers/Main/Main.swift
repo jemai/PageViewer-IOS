@@ -47,7 +47,8 @@ class Main: UIViewController , ViewPagerDelegate {
     //
     func scrollPager(index : NSIndexPath){
         self.pager.scrollToItemAtIndexPath(index, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
-        
+        self.menu.selectItemAtIndexPath(index, animated: true, scrollPosition: UICollectionViewScrollPosition.CenteredHorizontally)
+
     }
     //
 }
