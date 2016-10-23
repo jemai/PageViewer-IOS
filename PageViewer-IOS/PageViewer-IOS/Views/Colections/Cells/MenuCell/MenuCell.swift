@@ -23,9 +23,10 @@ class MenuCell: UICollectionViewCell {
         didSet {
             if self.selected {
                 self.selectionView.hidden = false
+                self.titleLab.textColor = UIColor.whiteColor()
             }else {
                 self.selectionView.hidden = true
-                
+                self.titleLab.textColor = UIColor.blackColor()
             }
         }
     }

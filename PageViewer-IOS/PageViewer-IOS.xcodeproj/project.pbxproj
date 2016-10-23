@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		C001BD331DAED5E500C51221 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001BD311DAED5E500C51221 /* MenuCell.swift */; };
 		C001BD341DAED5E500C51221 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C001BD321DAED5E500C51221 /* MenuCell.xib */; };
+		C0BD2D3B1DBD453800CC7D88 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D3A1DBD453800CC7D88 /* DataConstants.swift */; };
+		C0BD2D3D1DBD474300CC7D88 /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D3C1DBD474300CC7D88 /* BaseConstants.swift */; };
+		C0BD2D3F1DBD481300CC7D88 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D3E1DBD481300CC7D88 /* UIColorExtensions.swift */; };
+		C0BD2D411DBD489900CC7D88 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D401DBD489900CC7D88 /* StringExtensions.swift */; };
 		C0E783621D988D1B00FD9AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E783611D988D1B00FD9AF0 /* AppDelegate.swift */; };
 		C0E783641D988D1B00FD9AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E783631D988D1B00FD9AF0 /* ViewController.swift */; };
 		C0E783671D988D1B00FD9AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E783651D988D1B00FD9AF0 /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		C001BD311DAED5E500C51221 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C001BD321DAED5E500C51221 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		C0BD2D3A1DBD453800CC7D88 /* DataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
+		C0BD2D3C1DBD474300CC7D88 /* BaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
+		C0BD2D3E1DBD481300CC7D88 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		C0BD2D401DBD489900CC7D88 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C0E7835E1D988D1B00FD9AF0 /* PageViewer-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PageViewer-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E783611D988D1B00FD9AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E783631D988D1B00FD9AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +160,8 @@
 		C0BD2D351DBD3D2000CC7D88 /* BaseConstants */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2D3A1DBD453800CC7D88 /* DataConstants.swift */,
+				C0BD2D3C1DBD474300CC7D88 /* BaseConstants.swift */,
 			);
 			path = BaseConstants;
 			sourceTree = "<group>";
@@ -159,6 +169,8 @@
 		C0BD2D361DBD3D2000CC7D88 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2D3E1DBD481300CC7D88 /* UIColorExtensions.swift */,
+				C0BD2D401DBD489900CC7D88 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -438,10 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BD2D411DBD489900CC7D88 /* StringExtensions.swift in Sources */,
 				C0E7839D1D988D6000FD9AF0 /* Main.swift in Sources */,
+				C0BD2D3B1DBD453800CC7D88 /* DataConstants.swift in Sources */,
+				C0BD2D3D1DBD474300CC7D88 /* BaseConstants.swift in Sources */,
 				C0FCCFB71DA308210091DB9F /* CustomFlowLayout.swift in Sources */,
 				C0E783641D988D1B00FD9AF0 /* ViewController.swift in Sources */,
 				C0E7839F1D988D6000FD9AF0 /* SharedCell.swift in Sources */,
+				C0BD2D3F1DBD481300CC7D88 /* UIColorExtensions.swift in Sources */,
 				C0E783A21D988D6000FD9AF0 /* Pager.swift in Sources */,
 				C0E783621D988D1B00FD9AF0 /* AppDelegate.swift in Sources */,
 				C001BD331DAED5E500C51221 /* MenuCell.swift in Sources */,

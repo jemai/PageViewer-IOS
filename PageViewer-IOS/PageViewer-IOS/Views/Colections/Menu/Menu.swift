@@ -10,13 +10,12 @@ import UIKit
 class Menu: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate {
     
     //MARK : Variables 
-    var menuDataSource  = [UIColor]()
     var flowLayou : UICollectionViewFlowLayout!
     var sharedNib = UINib(nibName: "MenuCell", bundle:nil)
     var pagerDelegate : ViewPagerDelegate!
     
     //
-    func initCollection(data : [UIColor]){
+    func initCollection(){
         self.dataSource = self
         self.delegate = self
         self.flowLayou = UICollectionViewFlowLayout()
@@ -24,17 +23,17 @@ class Menu: UICollectionView , UICollectionViewDataSource , UICollectionViewDele
         self.collectionViewLayout = flowLayou
         self.registerNib(sharedNib, forCellWithReuseIdentifier: "MenuCell")
         self.backgroundColor = UIColor.whiteColor()
-        self.menuDataSource = data
 
     }
     //
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return menuDataSource.count
+            return DataConstant.dataSource.count
     }
     //
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : MenuCell = dequeueReusableCellWithReuseIdentifier("MenuCell", forIndexPath: indexPath) as! MenuCell
-        cell.backgroundColor = self.menuDataSource[indexPath.row]
+        cell.titleLab.text = DataConstant.dataSource[indexPath.row].1
+        cell.backgroundColor = ColorConstants.menuBackGround
         return cell
     }
     //

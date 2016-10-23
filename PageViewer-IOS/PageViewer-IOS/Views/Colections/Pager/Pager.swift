@@ -11,14 +11,13 @@ import UIKit
 class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate {
     
     //MARK : Variables
-    var pagerDataSource  = [UIColor]()
     var flowLayou : UICollectionViewFlowLayout!
     var sharedNib = UINib(nibName: "SharedCell", bundle:nil)
     //
     var pagerDelegate : ViewPagerDelegate!
     
     // MARK: - initializers
-    func initCollection(data : [UIColor]){
+    func initCollection(){
 
         self.dataSource = self
         self.delegate = self
@@ -33,17 +32,16 @@ class Pager: UICollectionView , UICollectionViewDataSource , UICollectionViewDel
         self.registerNib(sharedNib, forCellWithReuseIdentifier: "SharedCell")
         self.backgroundColor = UIColor.whiteColor()
         
-        self.pagerDataSource = data
     }
     // MARK: - Datasource and delegate implementations
     //
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pagerDataSource.count
+        return DataConstant.dataSource.count
     }
     //
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : SharedCell = dequeueReusableCellWithReuseIdentifier("SharedCell", forIndexPath: indexPath) as! SharedCell
-        cell.backgroundColor = self.pagerDataSource[indexPath.row]
+        cell.backgroundColor = DataConstant.dataSource[indexPath.row].0
         return cell
     }
 

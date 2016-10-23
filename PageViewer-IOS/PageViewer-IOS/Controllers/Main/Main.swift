@@ -22,14 +22,16 @@ class Main: UIViewController , ViewPagerDelegate {
     //datasource of collections
     let data = [UIColor.blackColor(),UIColor.blueColor(),UIColor.greenColor(),UIColor.grayColor(),UIColor.redColor(),UIColor.blueColor()]
     
+    let menuData = ["black","blue","green","gray","red","blue"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //
         self.menu.pagerDelegate = self
         self.pager.pagerDelegate = self
         //
-        self.menu.initCollection(data)
-        self.pager.initCollection(data)
+        self.menu.initCollection()
+        self.pager.initCollection()
         self.menu.selectItemAtIndexPath(NSIndexPath(forRow:0, inSection: 0), animated: true, scrollPosition: UICollectionViewScrollPosition.CenteredHorizontally)
     }
     
